@@ -11,13 +11,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black">
-    <Hero />
-
+      <Header />
+      <Hero />
       <Compositions />
       <Items />
       <About />
       <Footer />
-      <Header />
 
       {showAuth && (
         <div className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm flex items-center justify-center px-4">
@@ -28,8 +27,6 @@ function App() {
             >
               Fechar
             </button>
-
-            
           </div>
         </div>
       )}
